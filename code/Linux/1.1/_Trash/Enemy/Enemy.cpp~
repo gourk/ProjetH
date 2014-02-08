@@ -1,0 +1,84 @@
+#include "Enemy.h"
+
+Enemy::Enemy()
+{
+}
+
+Enemy::Enemy(const char *Bmp,char Letter)
+{
+	_surfObject = SDL_LoadBMP(Bmp);
+	_Letter=Letter;
+}
+
+void Enemy::SetCharac_i(int i)
+{
+	_Charac_i = i;
+}
+
+void Enemy::SetCharac_j(int j)
+{
+	_Charac_j = j;
+}
+int Enemy::GetCharac_i()
+{
+	return _Charac_i;
+}
+
+int Enemy::GetCharac_j()
+{
+	return _Charac_j;
+}
+
+void Enemy::New(const char *Bmp,char Letter)
+{
+	_surfObject = SDL_LoadBMP(Bmp);
+	_Letter=Letter;
+}
+
+void Enemy::Init()
+{
+	SDL_SetColorKey(_surfObject,SDL_SRCCOLORKEY,SDL_MapRGB(_surfObject->format,0,255,0));
+}
+
+void Enemy::Up()
+{
+	if (_Charac_i>0)
+	{
+		_Charac_i = _Charac_i - 1;
+	}
+}
+
+void Enemy::Right()
+{	
+	if (_Charac_j<24)
+	{
+		_Charac_j =_Charac_j + 1;
+	}
+}
+
+void Enemy::Left()
+{
+	if (_Charac_j>0)
+	{
+		_Charac_j = _Charac_j - 1;
+	}
+}
+
+void Enemy::Down()
+{
+	if (_Charac_i<24)
+	{
+		_Charac_i = _Charac_i + 1;
+	}
+}
+void Enemy::DownLeft()
+{
+	if (_Charac_i<24)
+	{
+		_Charac_i = _Charac_i + 1;
+	}
+	if (_Charac_j>0)
+	{
+		_Charac_j = _Charac_j - 1;
+	}
+}

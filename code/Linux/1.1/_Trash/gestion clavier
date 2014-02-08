@@ -1,0 +1,66 @@
+Code fonctionnel mais non utilisé pour performance mediocre
+				/*case SDL_KEYDOWN:
+					switch (event.key.keysym.sym)
+					{
+						case SDLK_ESCAPE:
+							bExit=true;
+							break;
+						case SDLK_DOWN:
+							Game.CheckDoor();
+							if ((Game.Collision((H.GetCharac_i()+1), H.GetCharac_j())) == false)
+							{	
+								Game.SetPlate(H.GetCharac_i(),H.GetCharac_j(),cvide);
+								H.Down();
+								Game.SetCharac_i(H.GetCharac_i());
+								Game.SetCharac_j(H.GetCharac_j());
+								Game.SetPlate(H.GetCharac_i(),H.GetCharac_j(),cH);
+								Game.Display(H.GetSurface(), H.GetRect());
+								Game.CheckKey();
+								Game.CheckDoor();
+							}
+							break;
+						case SDLK_RIGHT:
+							Game.CheckDoor();
+							if ((Game.Collision(H.GetCharac_i(), H.GetCharac_j()+1)) == false)
+							{
+								Game.SetPlate(H.GetCharac_i(),H.GetCharac_j(),cvide);
+								H.Right();
+								Game.SetCharac_i(H.GetCharac_i());
+								Game.SetCharac_j(H.GetCharac_j());
+								Game.SetPlate(H.GetCharac_i(),H.GetCharac_j(),cH);
+								Game.Display(H.GetSurface(), H.GetRect());
+								Game.CheckKey();
+								Game.CheckDoor();
+							}
+							break;
+						case SDLK_LEFT:
+							Game.CheckDoor();
+							if ((Game.Collision(H.GetCharac_i(), H.GetCharac_j()-1)) == false)
+							{
+								Game.SetPlate(H.GetCharac_i(),H.GetCharac_j(),cvide);
+								H.Left();
+								Game.SetCharac_i(H.GetCharac_i());
+								Game.SetCharac_j(H.GetCharac_j());
+								Game.SetPlate(H.GetCharac_i(),H.GetCharac_j(),cH);
+								Game.Display(H.GetSurface(), H.GetRect());
+								Game.CheckKey();
+								Game.CheckDoor();
+							}
+							break;
+						case SDLK_UP:
+							Game.CheckDoor();
+							if ((Game.Collision(H.GetCharac_i()-1, H.GetCharac_j())) == false)
+							{
+								Game.SetPlate(H.GetCharac_i(),H.GetCharac_j(),cvide);
+								H.Up();
+								Game.SetCharac_i(H.GetCharac_i());
+								Game.SetCharac_j(H.GetCharac_j());
+								Game.SetPlate(H.GetCharac_i(),H.GetCharac_j(),cH);
+								Game.Display(H.GetSurface(), H.GetRect());
+								Game.CheckKey();
+								Game.CheckDoor();
+							}
+						default:
+							break;
+					}
+					break;*/

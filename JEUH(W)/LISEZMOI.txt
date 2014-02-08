@@ -1,0 +1,9 @@
+x -> vide
+b -> brique
+k -> cle
+d -> porte
+h -> hero
+1 -> ennemi 1
+2 -> ennemi 2
+G -> objet 1
+R -> objet 2

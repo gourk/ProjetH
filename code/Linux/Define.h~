@@ -1,0 +1,28 @@
+#ifndef H_DEFINE
+#define H_DEFINE
+
+#ifdef WIN32
+#pragma comment(lib, "SDL.lib")
+#pragma comment(lib, "SDLmain.lib")
+#pragma comment(lib, "SDL_TTF.lib")
+#endif
+
+#include <SDL.h>
+#include <stdlib.h>
+#include <SDL/SDL_ttf.h>
+#include <stdio.h>
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <string>
+#include <cstring>
+//#include <conio.h>
+
+
+const int WIDTH  = 800;
+const int HEIGHT = 800;
+const int DEPTH  =  32;
+
+using namespace std;
+
+#endif
